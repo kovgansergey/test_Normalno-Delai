@@ -94,3 +94,35 @@
     &_search
       &:hover
         cursor: pointer
+@media (max-width: 1210px)
+  .links
+    &_phone
+      font-size: 18px
+@media (max-width: 991px)
+  .logo
+    width: 160px
+  .links
+    &_item,
+      display: none
+  .menu
+    justify-content: space-around
+    &_links,
+      display: none
+    &_line
+      &:nth-child(2)
+        display: none
+@media (max-width: 767px)
+  .header
+    &_contacts
+      margin-top: 12px
+      padding: 0 10px
+  .links
+    &_phone
+      font-size: 16px
+    &_social
+      display: none
+  .menu
+    margin-top: 10px
+@media (max-width: 566px)
+  .logo
+    width: 130px
