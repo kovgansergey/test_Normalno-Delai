@@ -1,0 +1,39 @@
+@font-face {
+  font-family: 'TT Commons Regular';
+  font-display: auto;
+  src: url('../fonts/TTCommons-Regular.eot');
+  src: url('../fonts/TTCommons-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/TTCommons-Regular.woff') format('woff'),
+    url('../fonts/TTCommons-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'TT Commons Medium';
+  font-display: auto;
+  src: url('../fonts/TTCommons-Medium.eot');
+  src: url('../fonts/TTCommons-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/TTCommons-Medium.woff') format('woff'),
+    url('../fonts/TTCommons-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'TT Commons DemiBold';
+  font-display: auto;
+  src: url('../fonts/TTCommons-DemiBold.eot');
+  src: url('../fonts/TTCommons-DemiBold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/TTCommons-DemiBold.woff') format('woff'),
+    url('../fonts/TTCommons-DemiBold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@mixin reg {
+  font-family: 'TT Commons Regular', sans-serif;
+}
+@mixin med {
+  font-family: 'TT Commons Medium', sans-serif;
+}
+@mixin dbold {
+  font-family: 'TT Commons DemiBold', sans-serif;
+}
