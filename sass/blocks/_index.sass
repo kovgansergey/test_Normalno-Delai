@@ -1,0 +1,56 @@
+.index_description
+  margin-top: 28px
+  margin-bottom: 100px
+  &_wrap
+    padding: 0 30px
+    display: flex
+    justify-content: space-between
+  &__text
+    width: 490px
+  &__img
+    & img
+      width: 100%
+  &__title
+    margin-top: 20px
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+  &__description
+    margin-top: 21px
+  &__buttons
+    display: flex
+  &__btn
+    margin-top: 30px
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 200px
+    height: 44px
+    margin-right: 20px
+  &__line
+    margin-top: 50px
+    text-align: center
+@media (max-width: 1210px)
+  .index_description
+    &__text
+      width: 430px
+@media (max-width: 991px)
+  .index_description
+    margin-top: 12px
+    &__text
+      width: 370px
+@media (max-width: 767px)
+  .index_description
+    &_wrap
+      padding: 0
+    &__text
+      width: 100%
+    &__img
+      display: none
+    &__title
+      width: 300px
+    &__description
+      margin-top: 12px
+    &__btn
+      margin-top: 15px
+    &__line
+      margin-top: 20px
+// @media (max-width: 566px)
