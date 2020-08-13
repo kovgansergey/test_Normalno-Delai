@@ -32,13 +32,22 @@
       &:last-child
         margin-right: 0
 .menu
+  position: relative
   margin-top: 30px
-  padding: 14px 20px
-  display: flex
-  justify-content: space-between
-  align-items: center
-  border: 1px solid #E7EBFF
-  border-radius: 40px
+  height: 56px
+  &_wrap
+    position: absolute
+    top: 0
+    left: 0
+    z-index: 2
+    padding: 14px 20px
+    width: 100%
+    display: flex
+    justify-content: space-between
+    align-items: center
+    background-color: #fff
+    border: 1px solid #E7EBFF
+    border-radius: 40px
   &_burger
     position: relative
     width: 20px
@@ -84,6 +93,64 @@
     width: 2px
     height: 26px
     background-color: #E6EBFF
+  &_content
+    display: none
+    position: absolute
+    top: 0
+    left: 0
+    z-index: 1
+    width: 100%
+    background: $seckond-color
+    border: none
+    border-radius: 27px
+    overflow: hidden
+    &__wrap
+      margin-top: 70px
+      padding: 0 45px 31px
+      display: flex
+      justify-content: space-between
+      flex-wrap: wrap
+    &__col
+      margin-top: 15px
+      display: flex
+      flex-direction: column
+      flex-basis: 15%
+    &__link
+      line-height: 36px
+      color: #5F6E81
+      &_title
+        margin-bottom: 15px
+        font-size: 20px
+    &__contacts
+      padding: 32px 45px
+      display: flex
+      justify-content: space-between
+      align-items: center
+      border-top: 2px solid #E9ECFB
+    &__btn
+      padding: 10px 25px
+      background: $white
+      border: 1px solid #E7EBFF
+    &__social
+      display: flex
+      align-items: center
+      & span
+        margin-right: 20px
+        color: #707070
+      &_item
+        margin-right: 16px
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 38px
+        height: 38px
+        background-color: $white
+        border-radius: 50%
+        &:last-child
+          margin-right: 0
+    &__phone
+      font-size: 22px
+      color: #494949
 @media (min-width: 992px)
   .links
     &_item
@@ -94,10 +161,22 @@
     &_search
       &:hover
         cursor: pointer
+    &_content
+      &__btn
+        &:hover
+          color: #5A9B06
+          border: 1px solid #CCE6AC
+          background-color: $white
 @media (max-width: 1210px)
   .links
     &_phone
       font-size: 18px
+  .menu
+    &_content
+      &__contacts
+        padding: 32px 25px
+      &__phone
+        font-size: 18px
 @media (max-width: 991px)
   .logo
     width: 160px
@@ -111,6 +190,11 @@
     &_line
       &:nth-child(2)
         display: none
+    &_content
+      &__col
+        flex-basis: 30%
+      &__contacts
+        display: none
 @media (max-width: 767px)
   .header
     &_contacts
@@ -123,6 +207,16 @@
       display: none
   .menu
     margin-top: 10px
+    &_content
+      &__link
+        &_title
+          margin-bottom: 0
 @media (max-width: 566px)
   .logo
     width: 130px
+  .menu
+    &_content
+      &__wrap
+        justify-content: center
+      &__col
+        flex-basis: 65%
