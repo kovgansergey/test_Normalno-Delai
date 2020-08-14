@@ -40,7 +40,7 @@
     top: 0
     left: 0
     z-index: 2
-    padding: 14px 20px
+    padding: 0 20px
     width: 100%
     display: flex
     justify-content: space-between
@@ -83,10 +83,38 @@
         &::after
           background-color: $main-color
   &_links
+    margin: 0 -27px
+    display: flex
+    & div
+      position: relative
     &_item
-      margin-right: 50px
-      &:last-child
-        margin-right: 0
+      padding: 18px 27px
+      &.active
+        background-color: $seckond-color
+  &_small
+    display: none
+    position: absolute
+    left: 0
+    top: 100%
+    margin-top: 17px
+    padding: 17px 24px
+    width: 210px
+    list-style: none
+    background: #FFFFFF
+    border: 1px solid #E7EBFF
+    box-shadow: 0px 1px 4px rgba(217, 217, 217, 0.25)
+    & li
+      & a
+        display: flex
+        justify-content: space-between
+        align-items: center
+        color: #5F6E81
+        line-height: 36px
+  &_link
+    margin: 0 -27px
+    padding: 17px 27px
+    &.active
+      background-color: $main-color
   &_search
     display: flex
   &_line
@@ -167,11 +195,20 @@
           color: #5A9B06
           border: 1px solid #CCE6AC
           background-color: $white
-@media (max-width: 1210px)
+@media (max-width: 1220px)
   .links
     &_phone
       font-size: 18px
   .menu
+    &_links
+      margin: 0 -22px
+      &_item
+        padding: 18px 22px
+    &_small
+      width: 185px
+    &_link
+      margin: 0 -22px
+      padding: 17px 22px
     &_content
       &__contacts
         padding: 32px 25px
@@ -185,7 +222,7 @@
       display: none
   .menu
     justify-content: space-around
-    &_links,
+    &_links
       display: none
     &_line
       &:nth-child(2)
