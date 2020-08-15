@@ -1,6 +1,5 @@
 .index_description
   margin-top: 28px
-  margin-bottom: 100px
   &_wrap
     padding: 0 30px
     display: flex
@@ -19,25 +18,79 @@
     display: flex
   &__btn
     margin-top: 30px
-    display: flex
-    justify-content: center
-    align-items: center
     width: 200px
     height: 44px
     margin-right: 20px
   &__line
     margin-top: 50px
-    text-align: center
-    overflow: hidden
+    height: 22px
+    background: url(../img/index/line.png)
+.index_events
+  margin-top: 55px
+  margin-bottom: 60px
+  & .container
+    padding: 0 30px
+  &_title
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    & a
+      width: 200px
+      height: 44px
+  &_wrap
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+  &_item
+    margin-top: 33px
+    width: 340px
+    border: 1px solid #E6EBFF
+    box-shadow: 0px 1px 4px rgba(217, 217, 217, 0.25)
+    border-radius: 8px
+    &_img
+      border-radius: 3px 3px 0 0
+      & img
+        width: 100%
+    &_content
+      padding: 23px
+      & h3
+        font-size: 20px
+        font-weight: normal
+      & p
+        margin-top: 9px
+        color: #707070
+    &_date
+      margin-top: 19px
+      display: flex
+      justify-content: space-between
+      align-items: center
+      font-size: 17px
+      &_line
+        width: 67px
+        border: 1px solid #D9D9D9
+      &_time
+        color: #3A3A3A
 @media (max-width: 1220px)
   .index_description
     &__text
       width: 430px
+  .index_events
+    &_item
+      width: 290px
+      &_content
+        padding: 15px
+        & h3
+          font-size: 17px
+      &_date
+        font-size: 14px
 @media (max-width: 991px)
   .index_description
     margin-top: 12px
     &__text
       width: 370px
+  .index_events
+    &_wrap
+      justify-content: space-around
 @media (max-width: 767px)
   .index_description
     &_wrap
@@ -54,4 +107,12 @@
       margin-top: 15px
     &__line
       margin-top: 20px
-// @media (max-width: 566px)
+  .index_events
+    margin: 20px 0
+    & .container
+      padding: 0
+@media (max-width: 566px)
+  .index_events
+    &_title
+      & a
+        margin-top: 10px
