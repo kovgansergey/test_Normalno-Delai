@@ -73,17 +73,17 @@
 .index_idea
   background-color: $seckond-color
   & .container
-    padding: 0 30px
+    padding: 50px 30px
   &_wrap
     display: flex
     justify-content: space-between
   &_item
-    margin: 50px 0
     width: 470px
     &_text
       margin-top: 10px
     &_img
       margin: 30px 0
+      width: 100%
 @media (max-width: 1220px)
   .index_description
     &__text
@@ -97,6 +97,9 @@
           font-size: 17px
       &_date
         font-size: 14px
+  .index_idea
+    &_item
+      width: 410px
 @media (max-width: 991px)
   .index_description
     margin-top: 12px
@@ -105,6 +108,14 @@
   .index_events
     &_wrap
       justify-content: space-around
+  .index_idea
+    &_wrap
+      flex-direction: column
+      align-items: center
+    &_item
+      width: 470px
+      &:last-child
+        margin-top: 50px
 @media (max-width: 767px)
   .index_description
     &_wrap
@@ -125,8 +136,17 @@
     margin: 20px 0
     & .container
       padding: 0
+  .index_idea
+    & .container
+      padding: 20px 0
+    &_item
+      &:last-child
+        margin-top: 30px
 @media (max-width: 566px)
   .index_events
     &_title
       & a
         margin-top: 10px
+  .index_idea
+    &_item
+      width: 100%
