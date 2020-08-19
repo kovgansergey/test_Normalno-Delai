@@ -84,6 +84,59 @@
     &_img
       margin: 30px 0
       width: 100%
+.index_manifest
+  & .container
+    padding: 60px 30px
+  &_wrap
+    display: flex
+    justify-content: space-between
+  &_item1
+    width: 800px
+    & p
+      margin-top: 16px
+    & img
+      margin: 15px 0
+      width: 100%
+  &_item2
+    display: flex
+    flex-direction: column
+    &_block
+      margin-bottom: 30px
+      position: relative
+      width: 210px
+      &__title
+        margin-bottom: 10px
+        font-family: 'PT Sans Caption', sans-serif
+      &__number
+        margin-right: 10px
+        font-size: 50px
+        font-weight: bold
+      &__text
+        display: inline-block
+        font-size: 19px
+      &__circle
+        display: inline-block
+        position: absolute
+        top: -4px
+        left: -12px
+        z-index: -1
+        width: 34px
+        height: 34px
+        border-radius: 50%
+        opacity: 0.2
+        &.circle1
+          background: #6CCDEB
+        &.circle2
+          background: #B262B4
+        &.circle3
+          background: #F9D25B
+    &_line
+      margin-bottom: 26px
+      width: 100%
+      border: 1px solid #E9ECFB
+    &_btn
+      width: 100%
+      height: 44px
 @media (max-width: 1220px)
   .index_description
     &__text
@@ -100,6 +153,15 @@
   .index_idea
     &_item
       width: 410px
+  .index_manifest
+    &_item1
+      width: 625px
+    &_item2
+      &_block
+        &__number
+          font-size: 38px
+        &__text
+          font-size: 15px
 @media (max-width: 991px)
   .index_description
     margin-top: 12px
@@ -113,9 +175,21 @@
       flex-direction: column
       align-items: center
     &_item
-      width: 470px
+      width: 100%
       &:last-child
         margin-top: 50px
+  .index_manifest
+    &_wrap
+      flex-direction: column
+    &_item1
+      width: 100%
+    &_item2
+      margin-top: 30px
+      flex-direction: row
+      flex-wrap: wrap
+      justify-content: space-around
+      &_line
+        display: none
 @media (max-width: 767px)
   .index_description
     &_wrap
@@ -142,6 +216,9 @@
     &_item
       &:last-child
         margin-top: 30px
+  .index_manifest
+    & .container
+      padding: 20px 0
 @media (max-width: 566px)
   .index_events
     &_title
