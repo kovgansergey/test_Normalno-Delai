@@ -700,6 +700,96 @@ a {
   height: 44px;
 }
 
+.index_problems {
+  background-color: #F5F7FF;
+}
+
+.index_problems .container {
+  padding: 50px 30px;
+}
+
+.index_problems_wrap1 {
+  display: flex;
+  justify-content: space-between;
+  color: #393939;
+}
+
+.index_problems_quote span {
+  font-size: 100px;
+  line-height: 44px;
+  color: #496AFA;
+}
+
+.index_problems_text {
+  width: 82%;
+}
+
+.index_problems_text_main {
+  margin-bottom: 15px;
+  font-size: 26px;
+  line-height: 32px;
+}
+
+.index_problems_wrap2 {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.index_problems_item {
+  margin-top: 45px;
+  width: 320px;
+  text-align: center;
+}
+
+.index_problems_item__img {
+  margin: auto;
+  width: 270px;
+  height: 270px;
+  background: #EFF5FE;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.index_problems_item__img img {
+  width: 100%;
+  height: 100%;
+}
+
+.index_problems_item__text {
+  margin-top: 38px;
+  font-size: 20px;
+}
+
+.index_problems_item__coin {
+  margin-top: 19px;
+}
+
+.index_problems_item__sign {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #FFFFFF;
+  border: 1px solid #E7EBFF;
+  box-shadow: 0px 1px 4px rgba(217, 217, 217, 0.25);
+  font-size: 38px;
+  color: #496AFA;
+  vertical-align: text-bottom;
+}
+
+.index_problems_item__number {
+  margin: 0 20px;
+  font-family: 'PT Sans Caption', sans-serif;
+  font-size: 40px;
+}
+
+.index_problems_btn {
+  margin: 40px auto 0;
+  width: 430px;
+  height: 44px;
+}
+
 @media (max-width: 1220px) {
   .index_description__text {
     width: 430px;
@@ -727,6 +817,16 @@ a {
   }
   .index_manifest_item2_block__text {
     font-size: 15px;
+  }
+  .index_problems_text_main {
+    font-size: 20px;
+    line-height: normal;
+  }
+  .index_problems_item {
+    width: 280px;
+  }
+  .index_problems_item__text {
+    font-size: 16px;
   }
 }
 
@@ -764,6 +864,9 @@ a {
   }
   .index_manifest_item2_line {
     display: none;
+  }
+  .index_problems_btn {
+    width: 100%;
   }
 }
 
@@ -803,6 +906,16 @@ a {
   }
   .index_manifest .container {
     padding: 20px 0;
+  }
+  .index_problems .container {
+    padding: 20px 0;
+  }
+  .index_problems_quote span {
+    font-size: 60px;
+    line-height: 24px;
+  }
+  .index_problems_item {
+    margin-top: 30px;
   }
 }
 

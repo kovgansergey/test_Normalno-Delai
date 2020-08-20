@@ -137,6 +137,67 @@
     &_btn
       width: 100%
       height: 44px
+.index_problems
+  background-color: $seckond-color
+  & .container
+    padding: 50px 30px
+  &_wrap1
+    display: flex
+    justify-content: space-between
+    color: #393939
+  &_quote
+    & span
+      font-size: 100px
+      line-height: 44px
+      color: $main-color
+  &_text
+    width: 82%
+    &_main
+      margin-bottom: 15px
+      font-size: 26px
+      line-height: 32px
+  &_wrap2
+    display: flex
+    justify-content: space-around
+    flex-wrap: wrap
+  &_item
+    margin-top: 45px
+    width: 320px
+    text-align: center
+    &__img
+      margin: auto
+      width: 270px
+      height: 270px
+      background: #EFF5FE
+      border-radius: 50%
+      overflow: hidden
+      & img
+        width: 100%
+        height: 100%
+    &__text
+      margin-top: 38px
+      font-size: 20px
+    &__coin
+      margin-top: 19px
+    &__sign
+      display: inline-block
+      width: 40px
+      height: 40px
+      border-radius: 50%
+      background: #FFFFFF
+      border: 1px solid #E7EBFF
+      box-shadow: 0px 1px 4px rgba(217, 217, 217, 0.25)
+      font-size: 38px
+      color: $main-color
+      vertical-align: text-bottom
+    &__number
+      margin: 0 20px
+      font-family: 'PT Sans Caption', sans-serif
+      font-size: 40px
+  &_btn
+    margin: 40px auto 0
+    width: 430px
+    height: 44px
 @media (max-width: 1220px)
   .index_description
     &__text
@@ -162,6 +223,15 @@
           font-size: 38px
         &__text
           font-size: 15px
+  .index_problems
+    &_text
+      &_main
+        font-size: 20px
+        line-height: normal
+    &_item
+      width: 280px
+      &__text
+        font-size: 16px
 @media (max-width: 991px)
   .index_description
     margin-top: 12px
@@ -190,6 +260,9 @@
       justify-content: space-around
       &_line
         display: none
+  .index_problems
+    &_btn
+      width: 100%
 @media (max-width: 767px)
   .index_description
     &_wrap
@@ -219,6 +292,15 @@
   .index_manifest
     & .container
       padding: 20px 0
+  .index_problems
+    & .container
+      padding: 20px 0
+    &_quote
+      & span
+        font-size: 60px
+        line-height: 24px
+    &_item
+      margin-top: 30px
 @media (max-width: 566px)
   .index_events
     &_title
