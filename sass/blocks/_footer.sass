@@ -1,0 +1,41 @@
+.footer
+  & .container
+    padding: 0 30px
+  &_menu
+    padding: 40px 0
+    background: $seckond-color
+    &_wrap
+      display: flex
+      justify-content: space-between
+    &_item
+      display: flex
+      flex-direction: column
+    &_link
+      line-height: 36px
+      color: #5F6E81
+      &_title
+        margin-bottom: 10px
+        font-size: 21px
+        color: #373737
+  &_contacts
+    padding: 30px 0 40px
+    &_wrap
+      display: flex
+      justify-content: space-between
+      align-items: center
+      & .links_phone
+        margin: 0
+    &_requisites
+      color: #717171
+@media (max-width: 991px)
+  .footer
+    &_menu
+      display: none
+    &_contacts
+      &_wrap
+        height: 210px
+        flex-direction: column
+@media (max-width: 767px)
+  .footer
+    & .container
+      padding: 0
