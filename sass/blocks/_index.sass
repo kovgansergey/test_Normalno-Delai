@@ -198,6 +198,27 @@
     margin: 40px auto 0
     width: 430px
     height: 44px
+.index_publications
+  & .container
+    padding: 60px 30px
+  &_title
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    & a
+      width: 200px
+      height: 44px
+  &_wrap
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+  &_item
+    margin-top: 30px
+    width: 255px
+    & img
+      width: 100%
+    & p
+      font-size: 19px
 @media (max-width: 1220px)
   .index_description
     &__text
@@ -263,6 +284,9 @@
   .index_problems
     &_btn
       width: 100%
+  .index_publications
+    &_wrap
+      justify-content: space-around
 @media (max-width: 767px)
   .index_description
     &_wrap
@@ -301,6 +325,9 @@
         line-height: 24px
     &_item
       margin-top: 30px
+  .index_publications
+    & .container
+      padding: 20px 0
 @media (max-width: 566px)
   .index_events
     &_title
@@ -309,3 +336,7 @@
   .index_idea
     &_item
       width: 100%
+  .index_publications
+    &_title
+      & a
+        margin-top: 10px
